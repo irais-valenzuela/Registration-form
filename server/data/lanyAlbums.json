@@ -1,5 +1,6 @@
 [
     {
+      "id": 1,
       "albumTitle": "Malibu Nights",
       "releaseYear": 2018,
       "songs": [
@@ -10,6 +11,7 @@
       ]
     },
     {
+      "id": 2,
       "albumTitle": "LANY",
       "releaseYear": 2017,
       "songs": [
@@ -17,6 +19,40 @@
         "The Breakup",
         "Super Far",
         "Overtime"
+      ]
+    }, 
+    {
+      "id": 3,
+      "albumTitle": "Mama's Boy",
+      "releaseYear": 2020,
+      "songs": [
+        "you!",
+        "Cowboy in LA",
+        "Heart Won't Let Me",
+        "If This is the Last Time"
+      ]
+    }, 
+    {
+      "id": 4,
+      "albumTitle": "GGBBXX",
+      "releaseYear": 2021,
+      "songs": [
+       "Ex I never had", 
+       "I didn't lie", 
+       "DNA",
+       "Remember That"
+      ]
+    },
+
+    {
+      "id": 5,
+      "albumTitle": "A Beautiful Blur",
+      "releaseYear": 2023,
+      "songs": [
+       "Cause you have to", 
+       "No", 
+       "It Even Rains in LA",
+       "I Pray"
       ]
     }
 
