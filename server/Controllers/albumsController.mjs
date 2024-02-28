@@ -39,6 +39,7 @@ export const deletedAlbum = async (id, req, res) => {
 export const createAlbumAPI = async (req, res) => {
   try {
     let body = "";
+    
 
     req.on("data", (chunk) => {
       body += chunk.toString();
@@ -62,7 +63,7 @@ export const updateAlbumAPI = async (id, req, res) => {
     req.on("data", (chunk) => {
       body += chunk.toString();
     });
-    
+
     req.on("end", async () => {
       const bodyObj = JSON.parse(body)
       const updatedAlbum = await updateAlbumInData(id, bodyObj);
