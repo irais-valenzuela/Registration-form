@@ -1,1 +1,37 @@
-[{"id":2,"albumTitle":"LANY","releaseYear":2017,"songs":["Dumb Stuff","The Breakup","Super Far","Overtime"]},{"id":3,"albumTitle":"Mama's Boy","releaseYear":2020,"songs":["you!","cowboy in LA","heart won't let me"]},{"id":4,"albumTitle":"LANY (Deluxe)","releaseYear":2018,"songs":["Good Girls","Pancakes","Hericane"]},{"releaseYear":"2015","albumTitle":"Kinda","songs":["Yes, babe no way","Made in Hollywood","Quit"],"id":"bcf4d00e-40f5-4a70-bc96-942a01dfbcab"},{"releaseYear":"2014","albumTitle":"You are fire","songs":["Someone else"],"id":"05e7f3ce-7863-4ede-8e9c-a3b744d5f72f"}]
+[
+  {
+    "id": 1,
+    "albumTitle": "Malibu Nights",
+    "releaseYear": 2018,
+    "songs": [
+      "Thick and Thin",
+      "Taking Me Back",
+      "If You See Her",
+      "I Don't Wanna Love You Anymore"
+    ]
+  },
+  {
+    "id": 2,
+    "albumTitle": "LANY",
+    "releaseYear": 2017,
+    "songs": ["Dumb Stuff", "The Breakup", "Super Far", "Overtime"]
+  },
+  {
+    "id": 3,
+    "albumTitle": "Mama's Boy",
+    "releaseYear": 2020,
+    "songs": ["you!", "cowboy in LA", "heart won't let me"]
+  },
+  {
+    "id": 4,
+    "albumTitle": "LANY (Deluxe)",
+    "releaseYear": 2018,
+    "songs": ["Good Girls", "Pancakes", "Hericane"]
+  },
+  {
+    "releaseYear": 2024,
+    "albumTitle": "A Beautiful Blur",
+    "songs": ["Cause you have to", "No"],
+    "id": "5652f33b-5147-49bc-9967-db161f4d837d"
+  }
+]

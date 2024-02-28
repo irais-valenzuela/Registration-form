@@ -37,14 +37,19 @@ export const deletedAlbum = async (id, req, res) => {
 
 export const createAlbumAPI = async (req, res) => {
   try {
-    const body = {
-      releaseYear: "2014",
-      albumTitle: "You are fire",
-      songs: ["Someone else"],
-    };
-    const createdAlbum = await createAlbum(body);
-    res.writeHead(201, { "Content-Type": "application/json" });
-    res.end(JSON.stringify(createdAlbum));
+    let body = ""
+
+    req.on("data", (chunk) => {
+      body += chunk.toString()
+    })
+
+    req.on("end", async () => {
+      const bodyObj = JSON.parse(body)
+      const createdAlbum = await createAlbum(bodyObj);
+      res.writeHead(201, { "Content-Type": "application/json" });
+      res.end(JSON.stringify(createdAlbum));
+    })
+
   } catch (error) {
     console.error(error);
   }
