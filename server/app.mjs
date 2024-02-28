@@ -4,7 +4,8 @@ const PORT = 3010;
 import {
   sendAllAlbums,
   sendAlbumById,
-  deletedAlbum
+  deletedAlbum,
+  createAlbumAPI
 
 } from "./Controllers/albumsController.mjs";
 
@@ -17,7 +18,6 @@ const server = http.createServer(async (req, res) => {
 
   if (pathname === "/api/lanyAlbums" && req.method === "GET") {
     if (id) {
-      console.log("IIIII", id)
       await sendAlbumById(id, req, res);
     } else {
       await sendAllAlbums(req, res);
@@ -26,7 +26,11 @@ const server = http.createServer(async (req, res) => {
     console.log("delete route");
     await deletedAlbum(id, req, res)
 
-  } else {
+  } else if (pathname === "/api/lanyAlbums" && req.method === "POST") {
+    console.log("POSTY route");
+    await createAlbumAPI(req, res)
+  }
+  else {
     res.writeHead(404, { "Content-Type": "text/plain" });
     res.end("Page not found.");
   }
