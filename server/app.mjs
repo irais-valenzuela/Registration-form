@@ -5,7 +5,8 @@ import {
   sendAllAlbums,
   sendAlbumById,
   deletedAlbum,
-  createAlbumAPI
+  createAlbumAPI, 
+  updateAlbumAPI 
 
 } from "./Controllers/albumsController.mjs";
 
@@ -23,12 +24,12 @@ const server = http.createServer(async (req, res) => {
       await sendAllAlbums(req, res);
     }
   } else if (pathname === "/api/lanyAlbums" && req.method === "DELETE") {
-    console.log("delete route");
     await deletedAlbum(id, req, res)
 
   } else if (pathname === "/api/lanyAlbums" && req.method === "POST") {
-    console.log("POSTY route");
     await createAlbumAPI(req, res)
+  } else if (pathname === "/api/lanyAlbums" && req.method === "PUT") {
+    await updateAlbumAPI(id, req, res)
   }
   else {
     res.writeHead(404, { "Content-Type": "text/plain" });
